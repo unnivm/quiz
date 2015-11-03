@@ -24,13 +24,17 @@ public class Parser {
                 output += (char) data;
               }
         }
+        
+        i.close();
         return output;
     }
+
 
     while ((data = i.read()) > 0) {
         output += (char) data;
     }
-
+    i.close();
+    
     return output;
   }
 
