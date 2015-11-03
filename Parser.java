@@ -44,5 +44,7 @@ public class Parser {
     for (int i = 0; i < content.length(); i += 1) {
       o.write(content.charAt(i));
     }
+    o.flush();
+    o.close()
   }
 }
